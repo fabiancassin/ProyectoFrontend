@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+.title_faq{
+    display: flex;
+    flex-direction:column;
+    
+    justify-content:center;
+    align-items: center;
+
+    background-color: #E5E5E5; /* Color de respaldo */
+    background-image:radial-gradient(circle, #E5E5E5,#457B9D);
+    /* display:grid; */
+   }
+
+
+
+.titulo img {
+    width: 30px; /* Ancho deseado para el icono */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+border-radius:50%;
+}
+
+
+.titulo{
+    color:#780000;
+    font-size:2rem;
+    font-family:"Roboto", san serif;
+
+}
+
+.subtitulo{
+    color:#003049;
+    font-family:"Roboto", san serif;
+    font-size: 1.5rem;
+}
+
+.boton-home {
+    display: -webkit-flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 10px;  
+    cursor:pointer;
+   
+}
+
+.container-faq{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.respuesta-faq{
+    background:lightgray;
+}
+
+.texto-faq{
+    color: #457B9D;
+}
+.respuesta-faq label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background:#8D99AE;
+    color: #FDF0D5;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+
+.respuesta-faq label:hover{
+    background: #003049;
+}
+
+
+.btn-faq:checked ~ .texto-faq{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+
+.btn-faq{
+    display: none;
+}
+.respuesta-faq .texto-faq{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.texto-faq span{
+    font-style: bold;
+}
+
+
+
+
+.boton-home{
+    /* Estilos del botón */
+    padding: 8px 16px;
+    background-color: #669BBC;
+    /* color: #FDF0D5; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    /* transition: transform 0.3s;  */
+
+    /* Estilos adicionales para la animación */
+    display: inline-block;
+    text-decoration: none;
+}
+/* Regla para la animación al pasar el mouse */
+.boton-home:hover { 
+    /* transform: scale(1.1);   
+    background-color: #003049;  */
+    background-color: #457B9D;
+    border: 2px solid #003049;
+} 
+.footer{
+    grid-area:footer;
+    .footer-content {
+        text-align: center;
+        
+    }
+}
+
+.guarda-Form{
+    font-size: 30px;
+    color: #780000;
+
+}
